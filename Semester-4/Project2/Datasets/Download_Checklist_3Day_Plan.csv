@@ -1,0 +1,18 @@
+Day,Task,Action_Link,File_Size,Time,Save_As,Status
+Day 1 - Morning,Download DS_001: Global EV Sales,https://www.kaggle.com/datasets/muhammadehsan000/global-electric-vehicle-sales-data-2010-2024,50 MB,2 min,01_global_ev_sales.csv,☐
+Day 1 - Morning,Download DS_002: Worldwide Car Sales,https://www.kaggle.com/datasets/sukhmandeepsinghbrar/total-worldwide-passenger-cars-sales,100 MB,2 min,02_worldwide_car_sales.csv,☐
+Day 1 - Morning,Download DS_003: China Monthly Sales,https://www.kaggle.com/datasets/felixzhao/china-automobile-monthly-sales-data-2018-2024-4,30 MB,2 min,03_china_monthly_sales.csv,☐
+Day 1 - Morning,Download DS_004: India EV Market,https://www.kaggle.com/datasets/srinrealyf/india-ev-market-data,20 MB,2 min,04_india_ev_market.csv,☐
+Day 1 - Morning,Download DS_005: WB World Dev,https://www.kaggle.com/datasets/nicolasgonzalezmunoz/world-bank-world-development-indicators,200 MB,5 min,05_wb_wdi.csv,☐
+Day 1 - Afternoon,Download DS_006: LPI from World Bank,https://lpi.worldbank.org,10 MB,5 min,06_lpi_biennial.csv,☐
+Day 1 - Afternoon,Download DS_007: India EV Alt,https://www.kaggle.com/datasets/praveenchoudhary1217/electric-vehicle-sales-in-india,10 MB,2 min,09_india_ev_sales_alt.csv,☐
+Day 1 - Afternoon,Download DS_009: India Car Sales 2024,https://www.kaggle.com/datasets/sourd810/car-sales-india-2024,20 MB,2 min,11_india_car_sales_2024.csv,☐
+Day 1 - Afternoon,Organize all Tier 1 files,Rename & organize,N/A,10 min,Move to /data/ folder,☐
+Day 2 - Morning,Create DS_013: India Policy Timeline,https://www.siam.in + https://www.niti.gov.in,N/A,30 min,07_india_policy_timeline.csv,☐
+Day 2 - Morning,Create DS_014: China Policy Timeline,https://www.csis.org + https://www.icct.org,N/A,30 min,08_china_policy_timeline.csv,☐
+Day 2 - Morning,Research & document policy milestones,Build CSV file,N/A,30 min,Manual entry,☐
+Day 2 - Afternoon,Download DS_008: India EV by State,https://www.kaggle.com/datasets/mafzal19/electric-vehicle-sales-by-state-in-india,5 MB,1 min,10_india_ev_by_state.csv,☐
+Day 2 - Afternoon,Download DS_015: Fuel Price Data,https://www.iea.org + https://data.worldbank.org,5 MB,10 min,15_fuel_price_data.csv,☐
+Day 2 - Evening,Run Python merge script,Run master_merge.py,N/A,5 min,Run: python master_merge.py,☐
+Day 3,Validate output CSV,Check master_panel_*.csv,N/A,5 min,Preview in Excel,☐
+Day 3,Ready for Model Training,✅ READY,N/A,✅,Use for DL models,☐

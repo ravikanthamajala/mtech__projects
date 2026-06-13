@@ -1,0 +1,16 @@
+Dataset_ID,Dataset_Name,Tier,Priority,Kaggle_Link,File_Type,Time_Period,Size,Download_Time,Save_As,Download_Now,Key_Columns,Use_For
+DS_001,Global Electric Vehicle Sales (2010–2024),⭐ TIER 1,CRITICAL,kaggle.com/datasets/muhammadehsan000/global-electric-vehicle-sales-data-2010-2024,CSV,2010–2024,50 MB,2 min,01_global_ev_sales.csv,✅,"Country, Year, EV_Sales, EV_Share",EV penetration (target)
+DS_002,Worldwide Passenger Car Sales (2005–2022),⭐ TIER 1,CRITICAL,kaggle.com/datasets/sukhmandeepsinghbrar/total-worldwide-passenger-cars-sales,CSV,2005–2022,100 MB,2 min,02_worldwide_car_sales.csv,✅,"Country, Year, Sales",Sales baseline
+DS_003,China Monthly Auto Sales (2018–2024),⭐ TIER 1,HIGH,kaggle.com/datasets/felixzhao/china-automobile-monthly-sales-data-2018-2024-4,CSV,2018–2024,30 MB,2 min,03_china_monthly_sales.csv,✅,"Year, Month, Sales",China detail 2018+
+DS_004,India EV Market Data (2001–2024),⭐ TIER 1,HIGH,kaggle.com/datasets/srinrealyf/india-ev-market-data,CSV,2001–2024,20 MB,2 min,04_india_ev_market.csv,✅,"Year, EV_Sales, EV_Share, Category",India EV series
+DS_005,World Bank Development Indicators,⭐ TIER 1,CRITICAL,kaggle.com/datasets/nicolasgonzalezmunoz/world-bank-world-development-indicators,CSV/XLS,1960–2024,200 MB,5 min,05_wb_wdi.csv,✅,"Country, Year, GDP, Population, Urban%","GDP, Population, Urban rate"
+DS_006,Logistics Performance Index,⭐ TIER 1,CRITICAL,lpi.worldbank.org,Excel/CSV,2007–2023,10 MB,5 min,06_lpi_biennial.csv,✅,"Country, Year, LPI, LPI_Infra",Infrastructure driver
+DS_007,India EV Sales (Alternative),⭐⭐ TIER 2,MEDIUM,kaggle.com/datasets/praveenchoudhary1217/electric-vehicle-sales-in-india,CSV,2010–2024,10 MB,2 min,09_india_ev_sales_alt.csv,⭕,"Year, EV_Sales, Category",India EV validation
+DS_008,India EV Sales by State,⭐⭐ TIER 2,LOW,kaggle.com/datasets/mafzal19/electric-vehicle-sales-by-state-in-india,CSV,2015–2024,5 MB,1 min,10_india_ev_by_state.csv,⭕,"State, Year, EV_Sales",State analysis (optional)
+DS_009,India Car Sales 2024,⭐⭐ TIER 2,MEDIUM,kaggle.com/datasets/sourd810/car-sales-india-2024,CSV,2018–2024,20 MB,2 min,11_india_car_sales_2024.csv,⭕,"Year, Brand, Sales, Segment",Recent India check
+DS_010,Car Pricing & Features,⭐⭐⭐ TIER 3,LOW,kaggle.com/datasets/msnbehdani/mock-dataset-of-second-hand-car-sales,CSV,2024,15 MB,2 min,12_car_pricing_features.csv,❌,"Model, Price, Features, Year",Pricing (optional)
+DS_011,Popular Indian Car Brands,⭐⭐⭐ TIER 3,LOW,kaggle.com/datasets/durgeshrao9993/durgeshcars,CSV,2023,10 MB,1 min,13_india_car_brands.csv,❌,"Brand, Model, Popularity",Brand analysis (optional)
+DS_012,General Vehicle Sales,⭐⭐⭐ TIER 3,LOW,kaggle.com/datasets/syedanwarafridi/vehicle-sales-data,CSV,Varies,Varies,Varies,14_general_vehicle_sales.csv,❌,"Country, Year, Sales",General benchmark
+DS_013,India EV Policy Timeline,🔧 MANUAL,CRITICAL,siam.in + niti.gov.in,CSV (Build),1999–2025,N/A,30 min,07_india_policy_timeline.csv,⏳,"Year, Policy, Dummy, Subsidy_Index",India policy dummy
+DS_014,China EV Policy Timeline,🔧 MANUAL,CRITICAL,csis.org + icct.org,CSV (Build),1999–2025,N/A,30 min,08_china_policy_timeline.csv,⏳,"Year, Policy, Dummy, Subsidy_Index",China policy dummy
+DS_015,Global Fuel Price Data,OPTIONAL,MEDIUM,iea.org + data.worldbank.org,CSV/Excel,2000–2025,5 MB,10 min,15_fuel_price_data.csv,⭕,"Country, Year, Fuel_Price",Fuel price proxy

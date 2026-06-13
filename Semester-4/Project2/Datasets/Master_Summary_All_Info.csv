@@ -1,0 +1,30 @@
+SECTION,Item,Details,Link / Reference
+🎯 PROJECT OVERVIEW,Total Datasets Required,15 datasets total (12 download + 2 manual + 1 optional),See Master Inventory
+🎯 PROJECT OVERVIEW,Total Download Size,~500 MB compressed,Aggregate of all downloads
+🎯 PROJECT OVERVIEW,Total Time,~2 hours total (including manual data creation),Breakdown: 30+20+60 min download
+📊 TIER 1 - CRITICAL (Download First),DS_001: Global EV Sales,Global EV penetration data 2010–2024,https://kaggle.com/muhammadehsan000/global-electric-vehicle-sales-data-2010-2024
+📊 TIER 1 - CRITICAL (Download First),DS_002: Worldwide Car Sales,Baseline car sales by country 2005–2022,https://kaggle.com/sukhmandeepsinghbrar/total-worldwide-passenger-cars-sales
+📊 TIER 1 - CRITICAL (Download First),DS_003: China Monthly Sales,China monthly detail for recent years,https://kaggle.com/felixzhao/china-automobile-monthly-sales-data-2018-2024-4
+📊 TIER 1 - CRITICAL (Download First),DS_004: India EV Market,India EV focus with long-horizon data,https://kaggle.com/srinrealyf/india-ev-market-data
+📊 TIER 1 - CRITICAL (Download First),DS_005: WB Indicators,"GDP, Population, Urbanization rates",https://kaggle.com/nicolasgonzalezmunoz/world-bank-world-development-indicators
+📊 TIER 1 - CRITICAL (Download First),DS_006: Logistics Index,"Infrastructure scores (biennial, interpolated)",https://lpi.worldbank.org
+📊 TIER 2 - SHOULD HAVE (Secondary),DS_007: India EV (Alt),Cross-check India EV series,https://kaggle.com/praveenchoudhary1217/electric-vehicle-sales-in-india
+📊 TIER 2 - SHOULD HAVE (Secondary),DS_008: India EV by State,State-level breakdown (optional),https://kaggle.com/mafzal19/electric-vehicle-sales-by-state-in-india
+📊 TIER 2 - SHOULD HAVE (Secondary),DS_009: India Car Sales 2024,Recent India sales validation,https://kaggle.com/sourd810/car-sales-india-2024
+📊 TIER 3 - NICE TO HAVE (Optional),DS_010: Car Pricing,Vehicle pricing & features (optional),https://kaggle.com/msnbehdani/mock-dataset-of-second-hand-car-sales
+📊 TIER 3 - NICE TO HAVE (Optional),DS_011: Car Brands,Brand & model distribution (optional),https://kaggle.com/durgeshrao9993/durgeshcars
+📊 TIER 3 - NICE TO HAVE (Optional),DS_012: General Vehicle Sales,General benchmark (optional),https://kaggle.com/syedanwarafridi/vehicle-sales-data
+✍️ MANUAL DATA (Build Yourself),DS_013: India Policy Timeline,"Build from SIAM, NITI Aayog, Ministry",https://siam.in + https://niti.gov.in
+✍️ MANUAL DATA (Build Yourself),DS_014: China Policy Timeline,"Build from CSIS, ICCT, Bloomberg",https://csis.org + https://icct.org
+⏱️ TIMELINE SUMMARY,Day 1 - Morning (Tier 1),30 min: Download 5 Tier-1 + organize,Save files as 01_–06_
+⏱️ TIMELINE SUMMARY,Day 1 - Afternoon (Tier 1 + 2),20 min: Download 3 Tier-2 + LPI,Add 07_–11_ files
+⏱️ TIMELINE SUMMARY,Day 2 - Morning (Manual),60 min: Create 2 policy CSVs manually,Create 07_ & 08_ from research
+⏱️ TIMELINE SUMMARY,Total Duration,110 min (1 hr 50 min) to complete all downloads,Day 2 Evening: Run merge script
+💾 FOLDER STRUCTURE,/data/ → Raw CSV files,All 12 files numbered 01_–15_,project_root/data/
+💾 FOLDER STRUCTURE,/data/processed/ → Master panel,Master merged output after Python script,project_root/data/processed/
+💾 FOLDER STRUCTURE,/scripts/ → Python merge code,master_merge.py (provided),project_root/scripts/
+💾 FOLDER STRUCTURE,/docs/ → Documentation,Checklists and guides,project_root/docs/
+💾 FOLDER STRUCTURE,/notebooks/ → Analysis,Jupyter notebooks for analysis,project_root/notebooks/
+✅ QUALITY CHECK,Final CSV rows,"~50 rows (2005–2024, 2 countries)",Expected: 50 (25 years × 2 countries)
+✅ QUALITY CHECK,Final CSV columns,"12 columns (country, year, sales, EV, macro, policy)","Expected: country, year, sales_pv, prod_pv, ev_sales, ev_share, gdp, pop, urban, lpi, policy_dummy, subsidy_index"
+✅ QUALITY CHECK,Missing values %,<5% (handled by interpolation),Handle with pandas.interpolate()

@@ -1,0 +1,147 @@
+1) Beautiful soup
+STEP 1: Check Python
+
+Open Command Prompt / Terminal and run:
+
+python --version
+
+
+If it shows Python 3.8+, you’re good.
+
+If not, install Python from:
+https://www.python.org/downloads/
+
+STEP 2: Install Required Libraries
+
+Run:
+
+python -m pip install requests beautifulsoup4 lxml
+
+
+These are:
+
+Library	               Purpose
+requests	       Fetch web pages
+beautifulsoup4	       Parse HTML
+lxml	               Fast HTML parser
+
+STEP 3: Create a Demo File
+
+Create a file called:
+
+beautifulsoup_demo.py
+
+STEP 4: Working BeautifulSoup Example
+
+Open Beautifulsoup_demo python file and run the code
+BeautifulSoup works on static HTML only. For Flipkart, Instagram, Twitter — we need Selenium or APIs.
+
+2. API
+
+An API gives structured data directly in JSON format, so we don’t need to scrape HTML. This is how Twitter, YouTube, Instagram, Reddit actually work.
+
+STEP 1: Install Requests 
+
+In VS Code terminal:
+
+pip install requests
+
+STEP 2: Create API Demo File
+
+Open: api_demo.py
+
+STEP 3: Run the code 
+
+3. YOUTUBE API
+
+STEP 1: Get a YouTube API Key
+
+Go to: https://console.cloud.google.com
+
+Create a New Project
+
+Project Name: YouTube API Project
+
+Location (Organization)
+
+You’ll usually see:
+
+No organization
+
+Just select No organization (default option).
+
+Then Click Create
+
+Enable YouTube Data API v3
+
+In Google Cloud Console, go to:
+
+APIs & Services → Credentials
+
+Click on CREATE CREDENTIALS
+
+Select: API Key
+
+Google will instantly generate a key like:
+
+AIzaSyDxxxxxxx....
+
+
+Click Copy.
+
+That’s your YouTube API Key
+
+STEP 2: Install Required Library
+
+In VS Code terminal:
+
+pip install google-api-python-client
+
+STEP 3: open youtube_api_demo.py
+
+
+3) Selenium
+
+Step 1: Install Selenium
+
+Open terminal / command prompt:
+
+pip install selenium webdriver-manager
+
+Step 2: Install Google Chrome
+
+Make sure Google Chrome is installed on your system.
+
+Check:
+
+chrome --version
+
+
+or just open Chrome normally.
+STEP 3: open selenium_demo.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

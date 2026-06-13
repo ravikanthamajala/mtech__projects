@@ -1,0 +1,111 @@
+1) TF-IDF Saboteur
+
+You are given a corpus.
+
+Normally TF-IDF highlights important words.
+
+Task:
+
+Write code that intentionally finds the top 5 least informative words by mathematically reversing TF-IDF.
+
+Output those words.
+
+2) Context Confusion (CBOW Twist)
+
+Train a CBOW model.
+
+Now deliberately swap the center word with a random word during training.
+
+Task:
+
+Measure and visualize how prediction accuracy changes.
+
+3) The Missing Vector Mystery
+
+Train Word2Vec on a corpus.
+
+Randomly delete ONE word embedding.
+
+Task:
+
+Using only cosine similarity of neighboring words, predict which word was removed.
+
+4) GloVe Without GloVe
+
+You are NOT allowed to use any GloVe library.
+
+Task:
+
+From scratch:
+
+• build co-occurrence matrix
+• factorize it
+• generate embeddings
+• find 3 similar words
+
+5) Bag-of-Words Liar
+
+Create a BoW classifier for sentiment.
+
+Now inject ONE misleading word into every sentence.
+
+Task:
+
+Detect the injected word and restore original accuracy.
+
+6) Embedding Algebra Trap
+
+Using word embeddings, solve:
+
+king − man + woman = ?
+
+
+Now repeat for:
+
+doctor − male + female = ?
+
+Task:
+
+Explain differences in outputs.
+
+7)TF-IDF vs Word2Vec Duel
+
+Given the same dataset:
+
+Train two classifiers:
+
+• TF-IDF
+• Word2Vec
+
+Task:
+
+Compare performance and prove which representation wins and why.
+
+8) Semantic Drift
+
+Gradually remove rare words from corpus.
+
+Task:
+
+Plot how cosine similarity between two fixed words changes.
+9) Context Window Game
+
+Train Word2Vec with window sizes:
+
+2, 5, 10.
+
+Task:
+
+Visualize how embeddings change and identify which window preserves meaning best.
+
+10) NLP Escape Puzzle (Final Boss)
+
+You receive:
+
+• scrambled corpus
+• partial embeddings
+• broken vocabulary
+
+Task:
+
+Reconstruct embeddings and decode hidden sentence.
